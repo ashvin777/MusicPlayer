@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.html5.musicplayer" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>HTML5 Music Player</name>
+    <description>
+    </description>
+    <author email="you@example.com" href="http://example.com.com/">
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="windows-target-version" value="8.1" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="1000" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <platform name="android">
+        <allow-intent href="tel:*" />
+        <access launch-external="yes" origin="geo:*" />
+    </platform>
+    <allow-navigation href="http://*/*" />
+    <plugin name="cordova-plugin-media" spec="~2.4.0" />
+    <plugin name="cordova-plugin-file" spec="~4.3.0" />
+</widget>
